@@ -1,19 +1,24 @@
 const express = require("express")
-const path = require('path')
+const path = require("path")
 const app = express()
-const cors = require('cors')
-const PORT = 5000
+const cors = require("cors")
+const PORT = process.env.PORT || 5000
 
 //* MIDDLEWARE **//
 app.use(cors())
-app.use(express.json({extended: false}))
+app.use(express.json({ extended: false }))
 
+app.use("/", require("./routes/emailRoute"))
 
-app.use(express.static(path.join(__dirname, 'client')))
+process.env.NODE_ENV = "production" 
 
-app.get('/', (req, res)=>{
-    res.send('hello from server')
-}) 
+if (process.env.NODE_ENV === "production") {
+  // Serve any static files
+  app.use(express.static(path.join(__dirname, "client")))
+  // Handle React routing, return all requests to React app
+  app.get("*", function (req, res) {
+    res.sendFile(path.join(__dirname, "client", "index.html"))
+  })
+}
 
-app.use('/', require('./routes/emailRoute'))
 app.listen(PORT, () => console.log(`Server running on port: ${PORT}`))
