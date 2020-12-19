@@ -19,5 +19,8 @@
   "homepage": "https://github.com/jpolivierr/portfolio#readme",
   "dependencies": {
     "axios": "^0.21.0"
+  },
+  "engines":{
+    "node": "14.4.0"
   }
 }
