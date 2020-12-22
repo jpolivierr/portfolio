@@ -98,6 +98,9 @@ nav .container .nav-box .nav-links li:nth-last-child(1) {
 
 nav .container .nav-box .logo {
   font-weight: bold;
+  background: url(../../img/J.O.png) no-repeat center center/contain;
+  width: 2rem;
+  height: 2rem;
 }
 
 nav .container .nav-box span {
@@ -789,6 +792,7 @@ nav .container .nav-box .menu::before {
   top: 0;
   left: 0;
   background: url(../../img/foodApp_scale.jpg) no-repeat center center/cover;
+  background: transparent;
   z-index: 0;
 }
 
@@ -798,6 +802,7 @@ nav .container .nav-box .menu::before {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.726);
+  background: rgba(255, 255, 255, 0);
 }
 
 .full-project .container .fullview-box {
@@ -829,11 +834,11 @@ nav .container .nav-box .menu::before {
 
 .full-project .container .fullview-box .full-view .feature-title {
   margin-bottom: .5rem;
-  color: #1cd6ff !important;
+  color: black !important;
 }
 
 .full-project .container .fullview-box .full-view .technology-title {
-  color: #1cd6ff;
+  color: black;
 }
 
 .full-project .container .fullview-box .full-view .feature-style {
@@ -852,23 +857,24 @@ nav .container .nav-box .menu::before {
 .full-project .container .fullview-box .full-view .feature-style li {
   margin-right: 1rem;
   margin-bottom: .3rem;
+  color: #686868;
 }
 
 .full-project .container .fullview-box .full-view .feature-style li i {
   margin-right: .1rem;
-  font-size: .8rem;
-  color: greenyellow;
+  font-size: .7rem;
+  color: #1cd6ff;
 }
 
 .full-project .container .fullview-box .full-view .ttitle {
   -webkit-animation: h2willmove 0.2s ease-in-out;
           animation: h2willmove 0.2s ease-in-out;
   margin-bottom: 0.3rem !important;
-  color: #1cd6ff !important;
+  color: black !important;
 }
 
 .full-project .container .fullview-box .full-view p {
-  color: white;
+  color: #686868;
   margin-bottom: 1rem;
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -878,7 +884,7 @@ nav .container .nav-box .menu::before {
 }
 
 .full-project .container .fullview-box .full-view h3 {
-  margin-bottom: 1rem;
+  margin-bottom: black;
 }
 
 .full-project .container .fullview-box .full-view .tech-box {
@@ -993,6 +999,8 @@ nav .container .nav-box .menu::before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-shadow: 8px 15px 20px -10px rgba(31, 30, 30, 0.418);
+          box-shadow: 8px 15px 20px -10px rgba(31, 30, 30, 0.418);
 }
 
 .full-project .container .fullview-box .full-view .two-buttons .demo {
@@ -1138,11 +1146,11 @@ nav .container .nav-box .menu::before {
 }
 
 .full-project .container .fullview-box .preview .projects-view .view.view1 {
-  background: url(../../img/foodApp_scale.jpg) no-repeat center center/cover;
+  background: url(../../img/property_full.jpg) no-repeat center center/cover;
 }
 
 .full-project .container .fullview-box .preview .projects-view .view.view2 {
-  background: url(../../img/Property_scale.jpg) no-repeat center center/cover;
+  background: url(../../img/resto_Full.jpg) no-repeat center center/cover;
 }
 
 .full-project .container .fullview-box .preview .projects-view .view.view3 {
@@ -1219,9 +1227,9 @@ nav .container .nav-box .menu::before {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   line-height: 150%;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 * input {
@@ -1230,7 +1238,7 @@ nav .container .nav-box .menu::before {
 
 body {
   overflow-x: hidden;
-  font-family: "Lato", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   width: 100vw;
 }
 
@@ -1240,7 +1248,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-bottom: 0.3rem;
 }
 

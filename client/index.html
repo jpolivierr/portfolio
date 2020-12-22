@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles//style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet"> 
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -13,13 +14,15 @@
     crossorigin="anonymous"
   />
     <title>Jean Olivier Portfolio</title>
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
 
 </head>
 <body>
     <nav id="nav">
         <div class="container">
             <div class="nav-box">
-                 <div class="logo">JEAN <span>OLIVIER</span></div>
+                 <div class="logo">  </div>
+                 <!-- JEAN <span>OLIVIER</span> -->
         <ul class="nav-links">
             <div class="nav-selector"></div>
             <li class="link" id="home-link">Home</li>
@@ -197,8 +200,6 @@
             </div>
         </div>
         </div>
-
-        
     </div>
      
     <div id="contact" class="contact">
@@ -206,14 +207,13 @@
             <div class="contact-box">
         <h2>CONTACT ME</h2>
         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, placeat!</P>
-        <form action="">
-            <input type="text" placeholder="Full Name *">
-            <input type="text" placeholder="Company *">
-            <input type="text" placeholder="Phone Number">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Message" name="" id="" >
-
-            </textarea>
+        <form id="form" action="">
+            <p id='error-msg'></p>
+            <input id="name" type="text" placeholder="Full Name *">
+            <input id="company" type="text" placeholder="Company *">
+            <input id ='phone'type="text" placeholder="Phone Number">
+            <input id="email" type="email" placeholder="Email*">
+            <textarea id="message" placeholder="Message*" name="" value='' ></textarea>
             <button id="contact-btn">SUBMIT</button>
         </form> 
         </div>
@@ -224,7 +224,7 @@
     <div class="footer">
         <div class="container">
            <div class="logo">JEAN <span>OLIVIER</span></div>
-        <p>Email: jpolivierr@gmail.com</p> 
+        <p>Email: olivierjp06@outlook.com</p> 
         </div>
         
         <div class="copyright">

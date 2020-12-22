@@ -11,7 +11,7 @@ const renderApp = (id) => {
       
       app.features.forEach((feature, index)=>{
           featurelist.push(`
-            <li><i class="far fa-check-circle"></i>${feature}</li>
+            <li><i class="fas fa-check"></i>${feature}</li>
           `)
       })
       
@@ -20,7 +20,8 @@ const renderApp = (id) => {
       <div class="tech-img ${tech.imgClass}"></div>
       `)
       })
-      fullViewBackground.style.background = `url(${app.img}) no-repeat center center/cover`
+      // fullViewBackground.style.background = `url(${app.img}) no-repeat center center/cover`
+      fullViewBackground.style.background = `transparent`
       fullView.innerHTML = `
             <h3 class='ttitle'>${app.title}</h3>
             <p>${app.descr}</p>

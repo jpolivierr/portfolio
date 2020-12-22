@@ -1,19 +1,92 @@
-
 // Navigatio smooth selector
 const allLinks = document.querySelectorAll(".link")
 const navLink = document.querySelector(".nav-links")
 const navSelector = document.querySelector(".nav-selector")
 const contactBtn = document.querySelector("#contact-btn")
+const formFields = document.querySelectorAll("#form input, textarea")
+const errorMsg = document.querySelector("#error-msg")
+const log = console.log
 
 contactBtn.addEventListener("click", (e) => {
   e.preventDefault()
-  console.log("clicked")
-  const config = {
-    method: 'GET',
+  clearErrorField(formFields)
+  const data = {}
+  let Err = false
+  formFields.forEach((field) => {
+    if (field.id !== "phone" && field.value === "") {
+      field.style.border = "1px solid red"
+      errorMsg.style.color = "red"
+      errorMsg.innerHTML = "Please fill all required fields"
+      Err = true
+      return Err
+    } else if (field.id === "message" && field.value === "") {
+      field.style.border = "1px solid red"
+      errorMsg.style.color = "red"
+      errorMsg.innerHTML = "Please fill all required fields"
+      Err = true
+      return Err
+    }
+  })
+  if (!Err) {
+    log(Err)
+    formFields.forEach((field) => {
+      if (field.id === "name") data.name = field.value.trim()
+      if (field.id === "phone") data.phone = field.value.trim()
+      if (field.id === "company") data.company = field.value.trim()
+      if (field.id === "email") data.email = field.value.trim()
+      if (field.id === "message") data.message = field.value.trim()
+    })
+    log(data)
+    sendData(data)
   }
-
-  fetch("/email", config)
 })
+
+function sendData(data) {
+  const config = {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  }
+  contactBtn.innerHTML = "Sending Message..."
+  fetch("/email", config)
+    .then((res) => {
+      console.log(res)
+      if (res.status === 200) {
+        errorMsg.style.color = "green"
+        errorMsg.innerHTML = "Message sent! Thank You."
+        contactBtn.innerHTML = "SUBMIT"
+        formFields.forEach((field) => {
+          field.value = ""
+        })
+        setTimeout(() => {
+          errorMsg.innerHTML = ""
+        }, 5000)
+      }
+      if (res.status === 400) {
+        errorMsg.style.color = "red"
+        errorMsg.innerHTML = "Oops! Something went wrong on our end. Please try again later or call."
+        contactBtn.innerHTML = "SUBMIT"
+        formFields.forEach((field) => {
+          field.value = ""
+        })
+        setTimeout(() => {
+          errorMsg.innerHTML = ""
+        }, 5000)
+      }
+    })
+    .catch((err) => {
+      console.log(err)
+    })
+}
+
+function clearErrorField(formfield) {
+  log("fired")
+  formfield.forEach((field) => {
+    field.style.border = ""
+    errorMsg.style.color = ""
+    errorMsg.innerHTML = ""
+  })
+}
 
 navLink.addEventListener("click", (e) => {
   const nodeName = e.target.nodeName
