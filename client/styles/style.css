@@ -339,6 +339,17 @@ nav .container .nav-box .menu::before {
   background: #1395b3;
 }
 
+.view-projects-btn {
+  background-color: transparent !important;
+  border: 1px solid #1cd6ff !important;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.view-projects-btn:hover {
+  background-color: #1cd6ff !important;
+}
+
 .about-me {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,7 +369,7 @@ nav .container .nav-box .menu::before {
   height: min-content;
   position: relative;
   background-color: white;
-  padding: 4rem 0px;
+  padding: 3rem 0px;
 }
 
 .about-me .about-me-box {
@@ -366,8 +377,20 @@ nav .container .nav-box .menu::before {
   max-width: 570px;
 }
 
+.about-me .about-me-box h2 {
+  position: relative;
+}
+
+.about-me .about-me-box h2::before {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  border-bottom: 0.3rem solid #1cd6ff;
+  top: -.5rem;
+}
+
 .projects {
-  background-color: #f8f6f6;
+  background-color: rgba(248, 246, 246, 0.575);
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
@@ -385,7 +408,7 @@ nav .container .nav-box .menu::before {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  padding: 4rem 0px;
+  padding: 3rem 0px;
 }
 
 .projects p {
@@ -425,8 +448,8 @@ nav .container .nav-box .menu::before {
   position: relative;
   overflow: hidden;
   margin: 0.8rem 0px 2rem 0px !important;
-  -webkit-box-shadow: 8px 15px 20px -10px rgba(31, 30, 30, 0.418);
-          box-shadow: 8px 15px 20px -10px rgba(31, 30, 30, 0.418);
+  -webkit-box-shadow: 8px 15px 20px -10px rgba(58, 56, 56, 0.164);
+          box-shadow: 8px 15px 20px -10px rgba(58, 56, 56, 0.164);
 }
 
 .projects .project-container .project-box .img::before {
@@ -459,8 +482,8 @@ nav .container .nav-box .menu::before {
   font-weight: bold;
   border-radius: 3px;
   padding: .5rem 0px;
-  -webkit-box-shadow: 8px 15px 20px -10px rgba(31, 30, 30, 0.418);
-          box-shadow: 8px 15px 20px -10px rgba(31, 30, 30, 0.418);
+  -webkit-box-shadow: 8px 15px 20px -10px rgba(58, 56, 56, 0.164);
+          box-shadow: 8px 15px 20px -10px rgba(58, 56, 56, 0.164);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
@@ -487,11 +510,11 @@ nav .container .nav-box .menu::before {
 }
 
 .projects .project-container .project-box.p1 .img {
-  background: url(../../img/foodApp_scale.jpg) no-repeat center center/cover;
+  background: url(../../img/property_full.jpg) no-repeat center center/cover;
 }
 
 .projects .project-container .project-box.p2 .img {
-  background: url(../../img/Property_scale.jpg) no-repeat center center/cover;
+  background: url(../../img/resto_Full.jpg) no-repeat center center/cover;
 }
 
 .projects .project-container .project-box.p3 .img {
@@ -517,7 +540,11 @@ nav .container .nav-box .menu::before {
           justify-content: center;
   text-align: center;
   position: relative;
-  padding: 4rem 0px;
+  padding: 3rem 0px;
+}
+
+.skills p {
+  max-width: 400px;
 }
 
 .skills .skills-box {
@@ -627,7 +654,7 @@ nav .container .nav-box .menu::before {
       -ms-flex-pack: center;
           justify-content: center;
   background: white;
-  padding: 4rem 0px;
+  padding: 3rem 0px;
 }
 
 .contact .contact-box {
@@ -645,7 +672,7 @@ nav .container .nav-box .menu::before {
   font-size: .7rem;
   border: none;
   border-radius: 5px;
-  background: #f8f6f6;
+  background: rgba(248, 246, 246, 0.575);
   padding: .5rem 1rem;
   width: 100%;
   border: 2px solid rgba(192, 192, 192, 0.26);
@@ -780,9 +807,9 @@ nav .container .nav-box .menu::before {
   height: min-content;
   max-height: 760px;
   position: relative;
-  background: #f8f6f6;
+  background: rgba(248, 246, 246, 0.575);
   display: none;
-  padding: 4rem 0px;
+  padding: 2rem 0rem;
 }
 
 .full-project .full-view-background {
@@ -839,6 +866,7 @@ nav .container .nav-box .menu::before {
 
 .full-project .container .fullview-box .full-view .technology-title {
   color: black;
+  margin-bottom: .8rem;
 }
 
 .full-project .container .fullview-box .full-view .feature-style {
@@ -999,8 +1027,8 @@ nav .container .nav-box .menu::before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 8px 15px 20px -10px rgba(31, 30, 30, 0.418);
-          box-shadow: 8px 15px 20px -10px rgba(31, 30, 30, 0.418);
+  -webkit-box-shadow: 8px 15px 20px -10px rgba(58, 56, 56, 0.164);
+          box-shadow: 8px 15px 20px -10px rgba(58, 56, 56, 0.164);
 }
 
 .full-project .container .fullview-box .full-view .two-buttons .demo {
@@ -1036,6 +1064,18 @@ nav .container .nav-box .menu::before {
   width: 50%;
   padding: 0rem 0rem 0rem 3rem;
   position: relative;
+}
+
+.full-project .container .fullview-box .preview h2 {
+  position: relative;
+}
+
+.full-project .container .fullview-box .preview h2::before {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  border-bottom: 0.3rem solid #1cd6ff;
+  top: -.5rem;
 }
 
 .full-project .container .fullview-box .preview .target {
@@ -1134,11 +1174,11 @@ nav .container .nav-box .menu::before {
 
 .full-project .container .fullview-box .preview .projects-view .view {
   width: 181px !important;
-  height: 10rem;
+  height: 11rem;
   border-radius: 5px;
   margin-right: 25px;
-  -webkit-box-shadow: 8px 15px 20px -10px rgba(31, 30, 30, 0.418);
-          box-shadow: 8px 15px 20px -10px rgba(31, 30, 30, 0.418);
+  -webkit-box-shadow: 8px 15px 20px -10px rgba(58, 56, 56, 0.164);
+          box-shadow: 8px 15px 20px -10px rgba(58, 56, 56, 0.164);
   cursor: pointer;
   z-index: 1;
   -webkit-animation: h2willmove 0.2s ease-in-out;
@@ -1227,9 +1267,9 @@ nav .container .nav-box .menu::before {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   line-height: 150%;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 * input {
@@ -1238,18 +1278,24 @@ nav .container .nav-box .menu::before {
 
 body {
   overflow-x: hidden;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   width: 100vw;
 }
 
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: lighter;
+}
+
+h1 span {
+  font-size: 2rem;
+  color: #1cd6ff;
 }
 
 h2 {
   font-size: 1.5rem;
-  padding-bottom: 0.3rem;
+  padding-bottom: 1rem;
 }
 
 h3 {
@@ -1276,7 +1322,7 @@ button {
 }
 
 .container {
-  width: 90%;
+  width: 80%;
   margin: 0px auto;
 }
 
@@ -1297,12 +1343,12 @@ button {
     display: none;
   }
   .contact {
-    background: #f8f6f6;
+    background: rgba(248, 246, 246, 0.575);
   }
   .contact .contact-box {
     padding: 2rem 2rem;
-    -webkit-box-shadow: 8px 15px 20px -10px rgba(31, 30, 30, 0.418);
-            box-shadow: 8px 15px 20px -10px rgba(31, 30, 30, 0.418);
+    -webkit-box-shadow: 8px 15px 20px -10px rgba(58, 56, 56, 0.164);
+            box-shadow: 8px 15px 20px -10px rgba(58, 56, 56, 0.164);
   }
 }
 
@@ -1348,15 +1394,15 @@ button {
 
 @media (min-width: 1480px) {
   * {
-    font-size: 22px;
+    font-size: 20px;
   }
   .about-me-box {
-    width: 90%;
+    width: 80%;
     max-width: 770px !important;
   }
   .container {
-    width: 80%;
-    width: 1380px !important;
+    width: 70%;
+    width: 1250px;
   }
   .full-project {
     height: 750px;

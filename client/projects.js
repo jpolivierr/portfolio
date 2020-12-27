@@ -2,19 +2,19 @@ const myProjects = [
   {
     id: 1,
     type: "website",
-    title: "Food App",
+    title: "Resurecting Properties LLC",
     descr:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum voluptatum at ad, natus tempora, quas aliquam debitis ratione corporis quibusdam nihil",
+      "Resurrecting Properties is a website built for a client who specializes in real estate.",
     img: "../../img/property_full.jpg",
     features: [
       "User Authentication",
       "Input Validation",
       "Filter Search",
-      "Form Submition",
+      "Form Submission",
       "Data Manipulation",
       "Error Handling",
-      "API request From backend",
-      "animation",
+      "API request From the backend",
+      "Animation",
     ],
     technology: [
       {
@@ -50,9 +50,9 @@ const myProjects = [
   {
     id: 2,
     type: "webapp",
-    title: "Property",
+    title: "ezSearch",
     descr:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum voluptatum at ad, natus tempora, quas aliquam debitis ratione corporis quibusdam nihil",
+      "EzSearch is a convenient way for users to search for restaurants in their area.",
     img: "../../img/resto_Full.jpg",
     features: [
       "User Login",
@@ -62,11 +62,11 @@ const myProjects = [
       "Web Scraping",
       "Input Validation",
       "Filter Search",
-      "Form Submition",
+      "Form Submission",
       "Data Manipulation",
       "Error Handling",
-      "API request From backend",
-      "animation",
+      "API request From the backend",
+      "Animation",
     ],
     technology: [
       {
@@ -104,7 +104,7 @@ const myProjects = [
     type: "website",
     title: "Portfolio",
     descr:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum voluptatum at ad, natus tempora, quas aliquam debitis ratione corporis quibusdam nihil",
+      "Website to showcase my projects.",
     img: "../../img/portfolio.jpg",
     features: [
       "Animation",

@@ -197,7 +197,6 @@ allProject.addEventListener("click", (e) => {
 })
 
 const firstProjectOnLoad = () => {
-  console.log("called")
   const target = document.querySelector(".target")
   const projects = document.querySelectorAll(".view")
   const id = 1
@@ -228,6 +227,8 @@ const aboutLink = document.querySelector("#about-link")
 const projectLink = document.querySelector("#project-link")
 const skillsLink = document.querySelector("#skills-link")
 const contactLink = document.querySelector("#contact-link")
+const letsTalkBtn = document.querySelector('#lets-talk-btn')
+const viewProjectsBtn = document.querySelector('#view-projects-btn')
 //section location
 const fullProject = document.querySelector("#fullProject")
 
@@ -235,7 +236,14 @@ function setVariable(a) {
   const newvar = document.querySelector(`#${a}`)
   return newvar
 }
-
+letsTalkBtn.addEventListener('click', ()=>{
+  let distance = setVariable("contact").offsetTop - (window.pageYOffset + 84)
+  scrollBy({ top: distance, behavior: "smooth" })
+})
+viewProjectsBtn.addEventListener('click', ()=>{
+  let distance = fullProject.offsetTop - (window.pageYOffset + 84)
+  scrollBy({ top: distance, behavior: "smooth" })
+})
 homeLink.addEventListener("click", () => {
   let distance = setVariable("home").offsetTop - window.pageYOffset
   scrollBy({ top: distance, behavior: "smooth" })
