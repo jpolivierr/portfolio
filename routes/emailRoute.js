@@ -1,6 +1,7 @@
 const express = require('express')
 const nodemailer = require("nodemailer")
 const router = express.Router()
+require('dotenv').config()
 
 router.post('/email',(req, res)=>{
     console.log(req.body)
@@ -14,8 +15,8 @@ router.post('/email',(req, res)=>{
     },
       service: "outlook",
       auth: {
-        user: "olivierjp06@outlook.com",
-        pass: "car2naval2",
+        user: process.env.EMAIL,
+        pass: process.env.PASSWORD,
       },
     })
      const {name, email, message, phone}=req.body

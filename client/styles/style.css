@@ -350,6 +350,10 @@ nav .container .nav-box .menu::before {
   background-color: #1cd6ff !important;
 }
 
+.s-content-section {
+  text-align: center;
+}
+
 .about-me {
   display: -webkit-box;
   display: -ms-flexbox;
