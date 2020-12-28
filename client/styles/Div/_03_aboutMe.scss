@@ -1,0 +1,21 @@
+.about-me {
+  @include flexCenter(column, center, center);
+  height: min-content;
+  position: relative;
+  background-color: white;
+  padding: $div-padding;
+  .about-me-box{
+    width: 90%;
+    max-width: 570px;
+    h2{
+      position: relative;
+      &::before{
+        content: '';
+         position: absolute;
+         width: 2rem;
+         border-bottom: .3rem solid $main-color;
+         top: -.5rem;
+      }
+    }
+  }
+}

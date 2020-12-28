@@ -1,0 +1,24 @@
+.footer{
+    position: relative;
+    height: 25vh;
+    padding-top: 3rem ;
+    background: $dark-color;
+    color: white;
+    @include flexCenter(column, flex-start, flex-start);
+    .logo{
+        font-weight: bold ;
+    }
+    span{
+        color: $main-color
+    }
+    .copyright{
+        position: absolute;
+        background-color: rgba(43, 41, 41, 1) ;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        @include flexCenter(row, center, center);
+        padding: .6rem 0%;
+        font-size: .6rem;
+    }
+}

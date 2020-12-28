@@ -1,0 +1,152 @@
+@import "./Setups/variables";
+@import "./Div/01_navigation";
+@import "./Div/02_showcase";
+@import "./Div/03_aboutMe";
+@import "./Div/04_project";
+@import "./Div/05_skills";
+@import "./Div/06_contact";
+@import "./Div/07_footer";
+@import "./Div/08_fullViewProject";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 150%;
+  font-size: 13px;
+  input {
+    border: none;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Noto Sans JP", sans-serif;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: lighter;
+}
+h1 span {
+  font-size: 2rem;
+  color: $main-color;
+}
+h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.7rem !important;
+}
+
+p {
+  color: $light-text-color;
+  font-size: 0.8rem;
+}
+
+li {
+  list-style: none;
+  font-size: 0.8rem;
+}
+
+button {
+  font-size: 0.7rem !important;
+}
+.container {
+  width: 80%;
+  margin: 0px auto;
+}
+
+@media (min-width: 300px) {
+  .contact-box {
+    width: 90%;
+  }
+}
+
+@media (min-width: 550px) {
+  * {
+    font-size: 18px;
+  }
+  .showcase {
+    height: 100vh;
+  }
+
+  .skills {
+    &::before {
+      display: none;
+    }
+  }
+  .contact {
+    background: $light-color;
+    .contact-box {
+      padding: 2rem 2rem;
+      box-shadow: $shadow;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .about-me {
+    padding: 5rem 0rem !important;
+  }
+  .container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1016px) {
+  * {
+    font-size: 20px;
+  }
+
+  .menu {
+    display: none !important;
+  }
+  .menu-drop {
+    display: none !important;
+  }
+  .nav-links {
+    display: flex !important;
+  }
+  .about-me {
+    padding: 5rem 0rem !important;
+  }
+  .container {
+    width: 80%;
+  }
+  .projects {
+    display: none;
+  }
+  .full-project {
+    display: flex;
+  }
+}
+
+@media (min-width: 1480px) {
+  * {
+    font-size: 20px;
+  }
+
+  .about-me-box {
+    width: 80%;
+    max-width: 770px !important;
+  }
+  .container {
+    width: 70%;
+    width: 1250px;
+  }
+
+  .full-project {
+    height: 750px;
+  }
+}

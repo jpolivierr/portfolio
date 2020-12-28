@@ -1,0 +1,152 @@
+@mixin flexCenter($direction, $align-items, $justify-content) {
+  display: flex;
+  flex-flow: $direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+nav {
+  @include flexCenter(row, center, space-between);
+  height: 10vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 5;
+  color: $showcase-test-color;
+  transition: all 0.3s ease-in-out;
+  .container {
+    .nav-box {
+      @include flexCenter(row, center, space-between);
+      .nav-links {
+        @include flexCenter(row, center, space-between);
+        display: none;
+        position: relative;
+        .nav-selector {
+          position: absolute;
+          bottom: 0;
+          width: 65px;
+          border: 1px solid $main-color;
+        }
+        li {
+          @include flexCenter(row, center, center);
+          margin: 0rem 0.3rem;
+          padding: 0.4rem 0rem;
+          width: 65px;
+          cursor: pointer;
+          transition: all 0.4s ease-in-out;
+          &:hover {
+            color: $main-color;
+          }
+          &:nth-child(2) {
+            margin-left: 0;
+          }
+          &:nth-last-child(1) {
+            margin-right: 0;
+          }
+        }
+      }
+      .logo {
+        font-weight: bold;
+        background: url(../../img/J.O.png) no-repeat center center/contain;
+        width: 2rem;
+        height: 2rem;
+      }
+      span {
+        color: $main-color;
+      }
+      .menu {
+        @include flexCenter(column, center, center);
+        width: 8%;
+        height: 0.9rem;
+        position: relative;
+        $menu-color: $showcase-test-color;
+        $menu-height: 1px;
+        $menu-width: 25px;
+        cursor: pointer;
+        .line {
+          width: $menu-width;
+          min-width: 25px;
+          border: $menu-height solid $menu-color;
+          position: relative;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: $menu-width;
+          min-width: 25px;
+          border: $menu-height solid $menu-color;
+
+          top: 0px;
+        }
+        &::before {
+          content: "";
+          width: $menu-width;
+          min-width: 25px;
+          border: $menu-height solid $menu-color;
+          position: absolute;
+          bottom: 0px;
+        }
+      }
+    }
+  }
+}
+
+.menu-drop {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  // animation: movemenu 0.3s ease-in-out forwards ;
+  display: none;
+  .menu-bar {
+    background-color: rgb(36, 35, 35);
+    @include flexCenter(row, center, center);
+    position: relative;
+    top: 100%;
+    height: 70px;
+    h3 {
+      color: $main-color;
+      font-size: 1rem;
+    }
+    .close {
+      cursor: pointer;
+      position: absolute;
+      top: 4px;
+      right: 8%;
+      transform: rotate(45deg) scale(1.8);
+    }
+  }
+  li {
+    @include flexCenter(column, center, center);
+    cursor: pointer;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(20, 20, 20);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.082);
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: $main-color;
+    }
+  }
+}
+
+@keyframes movemenu {
+  0% {
+    opacity: 0;
+    top: -100%;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes menuout {
+   0% {
+    opacity: 1;
+    top: 0;
+  }
+  100% {
+    opacity: 0;
+    top: -100%;
+  }
+ 
+}

@@ -1,0 +1,98 @@
+.projects {
+  background-color: $light-color;
+  height: min-content;
+  @include flexCenter(column, flex-start, center);
+  position: relative;
+  padding: $div-padding;
+  p{
+    color: $light-text-color ;
+    margin-bottom: 0.5rem;
+  }
+  .project-container {
+    @include flexCenter(row, center, space-between);
+    width: 105%;
+    // border: 1px solid red;
+    overflow-x: scroll;
+    .project-box {
+      margin-bottom: 5%;
+      width: 30%;
+      min-width: 229px;
+      margin-right: 2rem;
+      .img {
+        width: 100%;
+        height: 13rem;
+        border-radius: 13px;
+        position: relative;
+        overflow: hidden;
+        margin: 0.8rem 0px 2rem 0px !important;
+        box-shadow: $shadow;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: $light-cover;
+        }
+      }
+      p {
+        color: $light-text-color ;
+        height: 25%;
+        margin: 0.2rem 0px .8rem 0px;
+      }
+      .button-options {
+        display: flex;
+        justify-content: space-between;
+        a {
+          text-decoration: none;
+          width: 48%;
+          border: none;
+          font-weight: bold;
+          border-radius: 3px;
+          padding: .5rem 0px;
+          box-shadow: $shadow;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          &:hover {
+            background: rgb(19, 149, 179);
+          }
+        }
+        .demo-mobile {
+          background-color: $main-color;
+          color: white;
+        }
+        .github-mobile {
+          background-color: $dark-color !important;
+          color: white !important;
+        }
+      }
+    }
+    .project-box.p1 .img {
+      background: url(../../img/property_full.jpg) no-repeat center center/cover;
+    }
+    .project-box.p2 .img {
+      background: url(../../img/resto_Full.jpg) no-repeat center center/cover;
+    }
+    .project-box.p3 .img {
+      background: url(../../img/portfolio.jpg) no-repeat center center/cover;
+    }
+  }
+
+  // .selectors {
+  //   position: absolute;
+  //   bottom: 0.5rem;
+  //   grid-column: 1 / span 2;
+  //   width: 100%;
+  //   height: 30px;
+
+  //   @include flexCenter(row, center, center);
+  //   .point {
+  //     width: 8px;
+  //     height: 8px;
+  //     background-color: $dark-color;
+  //     border-radius: 50%;
+  //     margin: 0px 3px;
+  //   }
+  // }
+}

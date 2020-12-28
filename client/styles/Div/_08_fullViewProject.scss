@@ -1,0 +1,291 @@
+.full-project {
+  @include flexCenter(row, center, flex-start);
+  height: min-content;
+  max-height: 760px;
+  position: relative;
+  background: $light-color;
+  display: none;
+  padding: 2rem 0rem;
+  .full-view-background {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(../../img/foodApp_scale.jpg) no-repeat center center/cover;
+    background: transparent;
+    z-index: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.726);
+      background: rgba(255, 255, 255, 0);
+    }
+  }
+  .container {
+    .fullview-box {
+      @include flexCenter(row, center, flex-start);
+      height: min-content;
+      position: relative;
+      .full-view {
+        width: 50%;
+        color: white;
+        padding: 0rem 2rem 1rem 0rem;
+        z-index: 1;
+        // animation: move .2s ease-in-out;
+        .feature-title{
+          margin-bottom: .5rem;
+          color: black !important;
+        }
+        .technology-title{
+          color: black;
+          margin-bottom: .8rem
+        }
+        .feature-style{
+          display: flex !important;
+          flex-flow: row wrap;
+          margin-bottom: 1rem;
+          animation: h2willmove 0.2s ease-in-out;
+          li{
+            margin-right: 1rem;
+            margin-bottom: .3rem;
+            color: $light-text-color;
+            i{
+              margin-right: .1rem;
+              font-size: .7rem;
+              color: $main-color;
+            }
+          }
+        }
+
+        .ttitle {
+          animation: h2willmove 0.2s ease-in-out;
+          margin-bottom: 0.3rem !important;
+          color: black !important;
+        }
+        p {
+          color: $light-text-color;
+          margin-bottom: 1rem;
+          height: min-content;
+          animation: h2willmove 0.2s ease-in-out;
+        }
+
+        h3 {
+          margin-bottom: black;
+        }
+        .tech-box {
+          width: 100%;
+          @include flexCenter(row, flex-start, flex-start);
+          margin-bottom: 3rem;
+          animation: h2willmove 0.2s ease-in-out;
+          .tech-img {
+            width: 2rem;
+            height: 2rem;
+            margin-right: 1.5rem;
+          }
+          .tech-img.img1 {
+            background: url(../../img/react-icon.png) no-repeat center
+              center/cover;
+          }
+          .tech-img.img2 {
+            background: url(../../img/node-icon.png) no-repeat center
+              center/cover;
+          }
+          .tech-img.img3 {
+            background: url(../../img/express-icon.png) no-repeat center
+              center/contain;
+          }
+          .tech-img.img4 {
+            background: url(../../img/mongodb-icon.png) no-repeat center
+              center/cover;
+          }
+          .tech-img.img5 {
+            background: url(../../img/redux-icon.png) no-repeat center
+              center/contain;
+          }
+          .tech-img.img6 {
+            background: url(../../img/html.png) no-repeat center
+              center/contain;
+          }
+          .tech-img.img7 {
+            background: url(../../img/css.png) no-repeat center
+              center/contain;
+          }
+          .tech-img.img8 {
+            background: url(../../img/javascript2.png) no-repeat center
+              center/contain;
+          }
+          .tech-img.img9 {
+            background: url(../../img/SASS.png) no-repeat center
+              center/contain;
+          }
+        }
+        @keyframes move {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        .two-buttons {
+          width: min-content;
+          @include flexCenter(row, flex-start, flex-start);
+          
+          a {
+            width: 8rem;
+            padding: 0.5rem 0rem;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-right: 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            box-shadow: $shadow;
+          }
+          .demo {
+            color: white;
+            border: none;
+            border-radius: 5px;
+            background: $main-color;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              background: rgb(19, 149, 179);
+            }
+          }
+          .github {
+            color: $dark-color;
+            border: none;
+            border-radius: 5px;
+            background: white;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              background: rgb(231, 230, 230);
+            }
+          }
+        }
+      }
+      .preview {
+        height: min-content;
+        width: 50%;
+        padding: 0rem 0rem 0rem 3rem;
+        position: relative;
+        h2{
+          position: relative;
+          &::before{
+            content: '';
+             position: absolute;
+             width: 2rem;
+             border-bottom: .3rem solid $main-color;
+             top: -.5rem;
+          }
+        }
+        .target {
+          position: absolute;
+          width: 181px;
+          height: 225px;
+          border: 2px solid $main-color;
+          border-radius: 5px;
+          z-index: 1;
+          transition: all 0.2s ease-in-out;
+          transform: scale(1.1);
+        }
+        p {
+          color: $light-text-color;
+          margin-bottom: 0.8rem;
+        }
+        h3 {
+          margin-bottom: 0.8rem;
+        }
+
+        ul {
+          @include flexCenter(row, flex-start, flex-start);
+          position: relative;
+          .type-selector {
+            position: absolute;
+            width: 107px;
+            height: 100%;
+            border: 1px solid silver;
+            border-radius: 100px;
+            transition: all 0.2s ease-in-out;
+            z-index: 0;
+          }
+          li {
+            @include flexCenter(row, center, center);
+            min-width: 101px;
+            margin-right: 5px;
+            padding: 0.1rem 0.5rem;
+            cursor: pointer;
+            z-index: 1;
+          }
+        }
+
+        .projects-view {
+          @include flexCenter(row, flex-start, flex-start);
+          height: min-content;
+          padding-bottom: 5%;
+          margin-top: 2rem;
+          overflow: hidden;
+          width: 38rem;
+          .view {
+            width: 181px !important;
+            height: 11rem;
+            border-radius: 5px;
+            margin-right: 25px;
+            box-shadow: $shadow;
+            cursor: pointer;
+            z-index: 1;
+            animation: h2willmove 0.2s ease-in-out;
+          }
+          .view.view1 {
+            background: url(../../img/property_full.jpg) no-repeat center
+              center/cover;
+          }
+          .view.view2 {
+            background: url(../../img/resto_Full.jpg) no-repeat center
+              center/cover;
+          }
+          .view.view3 {
+            background: url(../../img/portfolio.jpg) no-repeat center
+              center/cover;
+          }
+        }
+        .selectors {
+          position: absolute;
+          bottom: -1.6rem;
+          grid-column: 1 / span 2;
+          width: 595px;
+          height: 30px;
+
+          @include flexCenter(row, center, center);
+          .s-point {
+            width: 8px;
+            height: 8px;
+            background-color: $dark-color;
+            border-radius: 50%;
+            margin: 0px 3px;
+          }
+          .point-active {
+            background: $main-color;
+            transform: scale(1.3);
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes h2willmove {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
