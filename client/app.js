@@ -28,7 +28,6 @@ contactBtn.addEventListener("click", (e) => {
     }
   })
   if (!Err) {
-    log(Err)
     formFields.forEach((field) => {
       if (field.id === "name") data.name = field.value.trim()
       if (field.id === "phone") data.phone = field.value.trim()
@@ -36,7 +35,6 @@ contactBtn.addEventListener("click", (e) => {
       if (field.id === "email") data.email = field.value.trim()
       if (field.id === "message") data.message = field.value.trim()
     })
-    log(data)
     sendData(data)
   }
 })
@@ -50,7 +48,6 @@ function sendData(data) {
   contactBtn.innerHTML = "Sending Message..."
   fetch("/email", config)
     .then((res) => {
-      console.log(res)
       if (res.status === 200) {
         errorMsg.style.color = "green"
         errorMsg.innerHTML = "Message sent! Thank You."
@@ -80,7 +77,6 @@ function sendData(data) {
 }
 
 function clearErrorField(formfield) {
-  log("fired")
   formfield.forEach((field) => {
     field.style.border = ""
     errorMsg.style.color = ""

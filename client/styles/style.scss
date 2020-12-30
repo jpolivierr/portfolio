@@ -71,15 +71,22 @@ button {
   .contact-box {
     width: 90%;
   }
+  .showcase {
+    height: 65vh;
+  }
+  * {
+    font-size: 16px;
+  }
+  h1, h1 span {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 550px) {
   * {
     font-size: 18px;
   }
-  .showcase {
-    height: 100vh;
-  }
+
 
   .skills {
     &::before {
@@ -96,11 +103,14 @@ button {
 }
 
 @media (min-width: 700px) {
-  .about-me {
-    padding: 5rem 0rem !important;
-  }
   .container {
     width: 80%;
+  }
+  .showcase {
+    height: 100vh;
+  }
+  h1, h1 span {
+    font-size: 2rem;
   }
 }
 
@@ -119,7 +129,7 @@ button {
     display: flex !important;
   }
   .about-me {
-    padding: 5rem 0rem !important;
+    // padding: 5rem 0rem !important;
   }
   .container {
     width: 80%;

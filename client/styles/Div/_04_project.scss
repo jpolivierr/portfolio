@@ -4,6 +4,16 @@
   @include flexCenter(column, flex-start, center);
   position: relative;
   padding: $div-padding;
+  h2{
+    position: relative;
+    &::before{
+      content: '';
+       position: absolute;
+       width: 2rem;
+       border-bottom: .3rem solid $main-color;
+       top: -.5rem;
+    }
+  }
   p{
     color: $light-text-color ;
     margin-bottom: 0.5rem;
@@ -16,15 +26,21 @@
     .project-box {
       margin-bottom: 5%;
       width: 30%;
-      min-width: 229px;
+      min-width: 200px;
       margin-right: 2rem;
+      height: min-content;
+      h3{
+        min-height: 58px;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+      }
       .img {
         width: 100%;
         height: 13rem;
         border-radius: 13px;
         position: relative;
         overflow: hidden;
-        margin: 0.8rem 0px 2rem 0px !important;
+        margin: 0.8rem 0px 0rem 0px !important;
         box-shadow: $shadow;
         &::before {
           content: "";
@@ -37,7 +53,8 @@
       p {
         color: $light-text-color ;
         height: 25%;
-        margin: 0.2rem 0px .8rem 0px;
+        min-height: 64px;
+        margin: 0.2rem 0px 1.5rem 0px;
       }
       .button-options {
         display: flex;

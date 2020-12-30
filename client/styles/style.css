@@ -301,8 +301,8 @@ nav .container .nav-box .menu::before {
   left: 0;
   z-index: -1;
   background: url(../../img/developer.jpg) no-repeat center center/cover;
-  -webkit-filter: blur(1px);
-          filter: blur(1px);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
 }
 
 .showcase .showcase-background:before {
@@ -373,7 +373,8 @@ nav .container .nav-box .menu::before {
   height: min-content;
   position: relative;
   background-color: white;
-  padding: 3rem 0px;
+  padding: 5rem 0rem;
+  padding-bottom: 9rem;
 }
 
 .about-me .about-me-box {
@@ -393,8 +394,26 @@ nav .container .nav-box .menu::before {
   top: -.5rem;
 }
 
+.about-me .triangle-shape {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(241, 239, 239, 0.575);
+}
+
+.about-me .triangle-shape::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+          clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
 .projects {
-  background-color: rgba(248, 246, 246, 0.575);
+  background-color: rgba(241, 239, 239, 0.575);
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
@@ -412,7 +431,19 @@ nav .container .nav-box .menu::before {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  padding: 3rem 0px;
+  padding: 5rem 0px;
+}
+
+.projects h2 {
+  position: relative;
+}
+
+.projects h2::before {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  border-bottom: 0.3rem solid #1cd6ff;
+  top: -.5rem;
 }
 
 .projects p {
@@ -441,8 +472,17 @@ nav .container .nav-box .menu::before {
 .projects .project-container .project-box {
   margin-bottom: 5%;
   width: 30%;
-  min-width: 229px;
+  min-width: 200px;
   margin-right: 2rem;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.projects .project-container .project-box h3 {
+  min-height: 58px;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .projects .project-container .project-box .img {
@@ -451,7 +491,7 @@ nav .container .nav-box .menu::before {
   border-radius: 13px;
   position: relative;
   overflow: hidden;
-  margin: 0.8rem 0px 2rem 0px !important;
+  margin: 0.8rem 0px 0rem 0px !important;
   -webkit-box-shadow: 8px 15px 20px -10px rgba(58, 56, 56, 0.164);
           box-shadow: 8px 15px 20px -10px rgba(58, 56, 56, 0.164);
 }
@@ -467,7 +507,8 @@ nav .container .nav-box .menu::before {
 .projects .project-container .project-box p {
   color: #686868;
   height: 25%;
-  margin: 0.2rem 0px .8rem 0px;
+  min-height: 64px;
+  margin: 0.2rem 0px 1.5rem 0px;
 }
 
 .projects .project-container .project-box .button-options {
@@ -544,7 +585,7 @@ nav .container .nav-box .menu::before {
           justify-content: center;
   text-align: center;
   position: relative;
-  padding: 3rem 0px;
+  padding: 5rem 0px;
 }
 
 .skills p {
@@ -611,11 +652,13 @@ nav .container .nav-box .menu::before {
   background: url(../../img/nodejs.png) no-repeat center center/contain;
   width: 6rem;
   position: relative;
+  margin: 0rem 1rem;
   top: 5%;
 }
 
 .skills .skills-box .skill.skill8 {
   background: url(../../img/mongodb-logo.png) no-repeat center center/contain;
+  margin: 0rem 1rem;
   width: 9rem;
 }
 
@@ -627,12 +670,28 @@ nav .container .nav-box .menu::before {
 .skills .skills-box .skill.skill10 {
   background: url(../../img/git.png) no-repeat center center/contain;
   width: 6rem;
+  margin: 0rem 1rem;
 }
 
 .skills .skills-box .skill.skill11 {
   background: url(../../img/github.png) no-repeat center center/contain;
   width: 6rem;
   height: 4rem;
+  margin: 0rem 1rem;
+}
+
+.skills .skills-box .skill.skill12 {
+  background: url(../../img/nginx.png) no-repeat center center/contain;
+  width: 6rem;
+  height: 4rem;
+  margin: 0rem 1rem;
+}
+
+.skills .skills-box .skill.skill13 {
+  background: url(../../img/aws.png) no-repeat center center/contain;
+  width: 6rem;
+  height: 4rem;
+  margin: 0rem 1rem;
 }
 
 .skills::before {
@@ -658,7 +717,7 @@ nav .container .nav-box .menu::before {
       -ms-flex-pack: center;
           justify-content: center;
   background: white;
-  padding: 3rem 0px;
+  padding: 5rem 0px;
 }
 
 .contact .contact-box {
@@ -676,7 +735,7 @@ nav .container .nav-box .menu::before {
   font-size: .7rem;
   border: none;
   border-radius: 5px;
-  background: rgba(248, 246, 246, 0.575);
+  background: rgba(241, 239, 239, 0.575);
   padding: .5rem 1rem;
   width: 100%;
   border: 2px solid rgba(192, 192, 192, 0.26);
@@ -811,9 +870,9 @@ nav .container .nav-box .menu::before {
   height: min-content;
   max-height: 760px;
   position: relative;
-  background: rgba(248, 246, 246, 0.575);
+  background: rgba(241, 239, 239, 0.575);
   display: none;
-  padding: 2rem 0rem;
+  padding: 5rem 0px;
 }
 
 .full-project .full-view-background {
@@ -940,9 +999,9 @@ nav .container .nav-box .menu::before {
 }
 
 .full-project .container .fullview-box .full-view .tech-box .tech-img {
-  width: 2rem;
+  width: 2.5rem;
   height: 2rem;
-  margin-right: 1.5rem;
+  margin-right: .8rem;
 }
 
 .full-project .container .fullview-box .full-view .tech-box .tech-img.img1 {
@@ -979,6 +1038,14 @@ nav .container .nav-box .menu::before {
 
 .full-project .container .fullview-box .full-view .tech-box .tech-img.img9 {
   background: url(../../img/SASS.png) no-repeat center center/contain;
+}
+
+.full-project .container .fullview-box .full-view .tech-box .tech-img.img10 {
+  background: url(../../img/nginx.png) no-repeat center center/contain;
+}
+
+.full-project .container .fullview-box .full-view .tech-box .tech-img.img11 {
+  background: url(../../img/aws.png) no-repeat center center/contain;
 }
 
 @-webkit-keyframes move {
@@ -1334,20 +1401,26 @@ button {
   .contact-box {
     width: 90%;
   }
+  .showcase {
+    height: 65vh;
+  }
+  * {
+    font-size: 16px;
+  }
+  h1, h1 span {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 550px) {
   * {
     font-size: 18px;
   }
-  .showcase {
-    height: 100vh;
-  }
   .skills::before {
     display: none;
   }
   .contact {
-    background: rgba(248, 246, 246, 0.575);
+    background: rgba(241, 239, 239, 0.575);
   }
   .contact .contact-box {
     padding: 2rem 2rem;
@@ -1357,11 +1430,14 @@ button {
 }
 
 @media (min-width: 700px) {
-  .about-me {
-    padding: 5rem 0rem !important;
-  }
   .container {
     width: 80%;
+  }
+  .showcase {
+    height: 100vh;
+  }
+  h1, h1 span {
+    font-size: 2rem;
   }
 }
 
@@ -1379,9 +1455,6 @@ button {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
-  }
-  .about-me {
-    padding: 5rem 0rem !important;
   }
   .container {
     width: 80%;
