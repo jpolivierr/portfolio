@@ -54,8 +54,8 @@ const myProjects = [
         img: "../../img/aws.png",
       },
     ],
-    site_url: "https:localhost:3000",
-    github_url: "https://www.github.com",
+    site_url: "https://www.csxdesign.com",
+    github_url: "https://github.com/jpolivierr/rp-mern-stack",
   },
   {
     id: 2,
@@ -116,8 +116,8 @@ const myProjects = [
         img: "../../img/aws.png",
       },
     ],
-    site_url: "https:localhost:4000",
-    github_url: "https://www.github.com",
+    site_url: "http://www.starscrip.com",
+    github_url: "https://github.com/jpolivierr/resto",
   },
   {
     id: 3,
@@ -165,7 +165,7 @@ const myProjects = [
         img: "../../img/aws.png",
       },
     ],
-    site_url: "https:localhost:5000",
-    github_url: "https://www.github.com",
+    site_url: "https://www.appvenir.com",
+    github_url: "https://github.com/jpolivierr/portfolio",
   },
 ]

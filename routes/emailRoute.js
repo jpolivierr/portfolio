@@ -22,7 +22,7 @@ router.post('/email',(req, res)=>{
      const {name, email, message, phone}=req.body
     let mailOptions = {
       from: "olivierjp06@outlook.com",
-      to: "brinks.alpha1@gmail.com",
+      to: "olivierjp06@outlook.com",
       subject: `NAME: ${name} | EMAIL FROM: ${email} | PHONE: ${phone} `,
       text: `${message}`,
     }

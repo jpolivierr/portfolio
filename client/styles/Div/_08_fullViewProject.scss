@@ -6,6 +6,7 @@
   background: $light-color;
   display: none;
   padding: $div-padding;
+  padding: 1rem 1rem;
   .full-view-background {
     position: absolute;
     width: 50%;
@@ -32,7 +33,7 @@
       .full-view {
         width: 50%;
         color: white;
-        padding: 0rem 2rem 1rem 0rem;
+        padding: 0rem 7rem 1rem 0rem;
         z-index: 1;
         // animation: move .2s ease-in-out;
         .feature-title{
@@ -178,8 +179,9 @@
       .preview {
         height: min-content;
         width: 50%;
-        padding: 0rem 0rem 0rem 3rem;
+        padding: 0rem 0rem 0rem 4rem;
         position: relative;
+        border-left: 1px solid rgba(192, 192, 192, 0.596);
         h2{
           position: relative;
           &::before{
@@ -193,9 +195,9 @@
         .target {
           position: absolute;
           width: 181px;
-          height: 225px;
-          border: 2px solid $main-color;
-          border-radius: 5px;
+          height: 220px;
+          border: 1px solid rgba(28, 213, 255, 0.74);
+          // border-radius: 5px;
           z-index: 1;
           transition: all 0.2s ease-in-out;
           transform: scale(1.1);

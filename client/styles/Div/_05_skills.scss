@@ -103,3 +103,23 @@
                bottom: 0;
     }
 }
+
+.top-triangle-shape{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 5rem;
+    top: 0;
+    background-color: white;
+    
+    &::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: $light-color;
+        clip-path: polygon(50% 0, 0 100%, 100% 100%);
+        clip-path: polygon(50% 100%, 0 0, 100% 0);
+      }
+}
