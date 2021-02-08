@@ -116,16 +116,15 @@ const myProjects = [
         img: "../../img/aws.png",
       },
     ],
-    site_url: "http://www.starscrip.com",
+    site_url: "https://www.starscrip.com",
     github_url: "https://github.com/jpolivierr/resto",
   },
   {
     id: 3,
     type: "website",
-    title: "Portfolio",
-    descr:
-      "Website to showcase my projects.",
-    img: "../../img/portfolio.jpg",
+    title: "MHI",
+    descr: "MHI is a web app built for a non-profit organization",
+    img: "../../img/mhi.jpg",
     features: [
       "Animation",
       "Form Submition",
@@ -165,7 +164,7 @@ const myProjects = [
         img: "../../img/aws.png",
       },
     ],
-    site_url: "https://www.appvenir.com",
-    github_url: "https://github.com/jpolivierr/portfolio",
+    site_url: "https://www.mhi2.xyz",
+    github_url: "https://github.com/jpolivierr/mhi",
   },
 ]

@@ -563,7 +563,7 @@ nav .container .nav-box .menu::before {
 }
 
 .projects .project-container .project-box.p3 .img {
-  background: url(../../img/portfolio.jpg) no-repeat center center/cover;
+  background: url(../../img/mhi.jpg) no-repeat top center/cover;
 }
 
 .skills {
@@ -950,13 +950,13 @@ nav .container .nav-box .menu::before {
 }
 
 .full-project .container .fullview-box .full-view .feature-title {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   color: black !important;
 }
 
 .full-project .container .fullview-box .full-view .technology-title {
   color: black;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 
 .full-project .container .fullview-box .full-view .feature-style {
@@ -974,13 +974,13 @@ nav .container .nav-box .menu::before {
 
 .full-project .container .fullview-box .full-view .feature-style li {
   margin-right: 1rem;
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
   color: #686868;
 }
 
 .full-project .container .fullview-box .full-view .feature-style li i {
-  margin-right: .1rem;
-  font-size: .7rem;
+  margin-right: 0.1rem;
+  font-size: 0.7rem;
   color: #1cd6ff;
 }
 
@@ -1028,7 +1028,7 @@ nav .container .nav-box .menu::before {
 .full-project .container .fullview-box .full-view .tech-box .tech-img {
   width: 2.5rem;
   height: 2rem;
-  margin-right: .8rem;
+  margin-right: 0.8rem;
 }
 
 .full-project .container .fullview-box .full-view .tech-box .tech-img.img1 {
@@ -1170,11 +1170,11 @@ nav .container .nav-box .menu::before {
 }
 
 .full-project .container .fullview-box .preview h2::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 2rem;
   border-bottom: 0.3rem solid #1cd6ff;
-  top: -.5rem;
+  top: -0.5rem;
 }
 
 .full-project .container .fullview-box .preview .target {
@@ -1292,7 +1292,7 @@ nav .container .nav-box .menu::before {
 }
 
 .full-project .container .fullview-box .preview .projects-view .view.view3 {
-  background: url(../../img/portfolio.jpg) no-repeat center center/cover;
+  background: url(../../img/mhi.jpg) no-repeat top center/cover;
 }
 
 .full-project .container .fullview-box .preview .selectors {
